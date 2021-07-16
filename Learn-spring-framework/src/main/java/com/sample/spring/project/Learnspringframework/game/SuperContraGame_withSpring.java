@@ -1,8 +1,13 @@
 package com.sample.spring.project.Learnspringframework.game;
 
-public class SuperContraGame implements GamingConsole{
+import org.springframework.context.annotation.Primary;
+import org.springframework.stereotype.Component;
+
+@Component
+
+public class SuperContraGame_withSpring implements GamingConsole{
 	public void up() {
-		System.out.println("go");
+		System.out.println("SuperContra game up");
 	}
 	
 	public void down() {
